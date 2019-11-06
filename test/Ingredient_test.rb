@@ -1,7 +1,7 @@
 require "minitest"
 require "minitest/autorun"
 require "minitest/pride"
-require_relative "../lib/Ingredient.rb"
+require_relative "../lib/ingredient.rb"
 
 class IngredientTest < Minitest::Test
   def setup

@@ -20,6 +20,7 @@ class RecipeTest < Minitest::Test
   end
   
   def test_it_can_add_ingredients
+    assert_kind_of Hash, @recipe.ingredients_required
     assert_empty @recipe.ingredients_required
     @recipe.add_ingredient(@mac, 8)
     @recipe.add_ingredient(@cheese, 2)
